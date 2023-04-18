@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="practical4.css"/>
+    <title>muje bhi head chaiye</title>
+    <style>
+
+body {
+  margin: 0; 
+  background: #181824; 
+  font-family: Arial; }
+nav {
+  position: fixed;
+  width: 100%;
+  max-width: 300px;
+  bottom: 0; top: 0;
+  display: block;
+  min-height: 300px;
+  height: 100%;
+  color: #fff;
+  opacity: 0.8;
+}
+nav .vertical-menu hr{
+  opacity: 0.1; 
+  border-width: 0.5px;
+}
+nav ul{
+  width: 90%; 
+  padding-inline-start: 0; 
+  margin: 10px; height: calc(100% - 20px); }
+nav .vertical-menu-logo{
+  padding: 20px; 
+  font-size: 1.3em; 
+  position: relative
+}
+nav .vertical-menu-logo .open-menu-btn{
+  width: 30px; 
+  height: max-content; 
+  position: absolute; 
+  display: block; 
+  right: 20px; 
+  top: 0; 
+  bottom: 0; 
+  margin: auto; 
+  cursor: pointer;
+}
+nav .vertical-menu-logo .open-menu-btn hr{
+  margin: 5px 0
+}
+nav li{
+  list-style: none; 
+  padding: 10px 10px; 
+  cursor: pointer;
+}
+nav li:hover{ 
+  color: rgba(75, 105, 176,1); 
+}
+.content-wrapper{
+  width: calc(100% - 300px);
+  height: 100%;
+  position: fixed;
+  background: #fff;
+  left: 300px;
+  padding: 20px;
+}
+
+.content-wrapper{
+  background: #ebebeb;
+}
+.content{
+  width: 90%;
+  min-height: 90%;
+  background: #fff;
+  border-radius: 10px;
+  padding: 30px;
+}
+
+    </style>
+</head>
+<nav class="vertical-menu-wrapper">
+    <div class="vertical-menu-logo">
+      <div>DOMBIVILI GYM</div>
+      <span class="open-menu-btn"><hr><hr><hr></span>
+    </div>
+    <ul class="vertical-menu">
+      <li>Workouts</li>
+      <li>Nutrition</li>
+      <hr />
+      <li>Progress</li>
+      <li>Settings</li>
+    </ul>
+  </nav>
+  <div class="content-wrapper">
+    <div class="content">
+    </div>
+  </div>
+  

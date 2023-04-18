@@ -1,0 +1,133 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+  html, body {
+    height: 100vh;
+    margin:  0;
+  }
+  body {
+    background: #EAEAEA;
+    font-family: Wensley;
+  }
+  #app {
+    width: 100%;
+    width: max(100%, 1100px);
+    height: 100%;
+    /* overflow: scroll; */
+  }
+  .container {
+    width: 88.88%;
+    margin: 0 auto;
+  }
+  a {
+    display: block;
+    color: inherit;
+  }
+  header {
+    height: 13%;
+    height: clamp(4rem, 13%, 7rem);
+    display: flex;
+  }
+  .header_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  nav {
+    width: 540px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  nav a {
+    text-decoration: none;
+    font-size: 1.2em;
+    position: relative;
+  }
+  nav a::after {
+    content: "";
+    position: absolute;
+    bottom: -20%;
+    /* left: 0;
+    width: 50%; */
+    height: 2px;
+    background: #000;
+  }
+  
+  nav .link:last-child a {
+    background: #000;
+    color: #fff;
+    padding: .5em .9em;
+    border-radius: 4px;
+    position: relative;
+  }
+  nav .link:last-child a::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    height: 100%;
+    background: #fff6;
+  }
+  
+  .hero {
+    margin-top: 3%;
+    width: 100%;
+    height: clamp(733px, 87%, 960px);
+  }
+  .hero_content {
+    height: 85%;
+    position: relative;
+  }
+  .hero-description {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .hero-text {
+    display: flex;
+    align-items: center;
+    z-index: 1;
+  }
+  .hero h1 {
+    width: 50%;
+    height: 40.25%;
+    font-size: clamp(6.3em, 7.9em, 9vw);
+    line-height: .95em;
+  }
+  .hero h2 {
+    width: 48%;
+    height: 35%;
+    font-size: clamp(3.5em, 4.2vw, 4.2em);
+    font-weight: 500;
+  }
+  .hero p {
+    width: 38.125%;
+    height: 15%;
+    font-size: 1.36em;
+    line-height: 1.4em;
+    color: #000b;
+  }
+  .hero img {
+    position: absolute;
+    object-fit: cover;
+  }
+  .hero-1 {
+    top: 0;
+    right: clamp(40vh, 39%, 23vw);
+    height: 100%;
+  }
+  .hero-2 {
+    right: 0;
+    height: 75.305%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  
+  
+  
+ 
